@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Poppins:wght@400;500;600&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+:root{
+    --Orange: hsl(26, 100%, 55%);
+    --Pale_orange: hsl(25, 100%, 94%);
+    --Very_vark_blue: hsl(220, 13%, 13%);
+    --Dark_grayish_blue: hsl(219, 9%, 45%);
+    --Grayish_blue: hsl(220, 14%, 75%);
+    --Light_grayish_blue: hsl(223, 64%, 98%);
+    --White: hsl(0, 0%, 100%);
+    --light_black: rgba(0, 0, 0, 0.750);
+    --paragraph: 16px;
+    --mobile:375px;
+    --desktop:1440px;
+    --font_smal:400;
+    --font_big:700;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+body{
+    position: relative;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    padding: 25px 100px;
+}
+.nav{
+    width: 100%;
+    border-bottom: 1px solid var(--Grayish_blue);
+    padding-bottom: 25px;
+}
+
+.nav-left .logo{
+    height: 16px;
+    margin-right: 48px;
+}
+
+.nav-left ul li{
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.nav-left ul li a{
+    color: var(--Dark_grayish_blue);
+    font-weight: var(--font_smal);
+}
+
+.cart .cart-icon{
+    margin-right: 32px;
+}
+
+.cart .avatar img{
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+}
+
+.shop-item{
+    padding: 70px 20px;
+    align-items: unset;
+}
+
+.shop-item .product-navigation{
+    flex: 0 0 50%;
+    padding: 25px 100px;
+}
+
+.shop-item .product-navigation .main{
+    width: 100%;
+    margin-bottom: 18px;
+
+}
+
+.shop-item .product-navigation .main img{
+    width: 100%;
+    /* height: auto; */
+    border-radius: 8px;
+}
+
+.shop-item .product-navigation .sub{
+    max-width: 100%;
+    
+
+}
+
+.shop-item .product-navigation .sub .sub-img-cont{
+    position: relative;
+    margin-right: 20px;
+    /* width: 80px; */
+    height: 80px;
+    object-fit: cover;
+}
+
+.shop-item .product-navigation .sub .sub-img-cont:nth-child(4){
+    margin-right: 0;
+}
+
+.shop-item .product-navigation .sub .sub-img-cont img{
+    max-width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.shop-item .product-navigation .sub .sub-img-cont .img-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-color:var(--light_black); */
+}
+
+
+
+.shop-item .product-navigation .sub .sub-img-cont img.active{
+    border: 3px solid var(--Orange);
+    
+}
+
+.product-detail{
+    padding: 50px 70px;
+}
+
+.product-detail .product-about h3{
+    color: var(--Orange);
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.product-detail .product-about h1{
+    font-weight: var(--font_big);
+    margin-bottom: 20px;
+}
+
+.product-detail .product-about p{
+    font-size: 16px;
+    color: var(--Dark_grayish_blue);
+    margin-bottom: 20px;
+}
+
+.product-detail .product-about .price{
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.product-detail .product-about .price span{
+    color: var(--Orange);
+    background: var(--Pale_orange);
+    font-size: 18px;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+.product-detail .product-about .crossed{
+    color:var(--Grayish_blue);
+    text-decoration: line-through;
+    margin-bottom: 20px;
+}
+
+form{
+    display: flex;
+}
+
+form .prod-control{
+    background-color: var(--Light_grayish_blue);
+    padding: 8px;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+form .prod-control span{
+    color: var(--Orange);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+form .prod-control input{
+    width: 50px;
+    margin: 0 10px;
+    border: none;
+    outline: none;
+    background-color: var(--Light_grayish_blue);
+    font-size: 16px;
+    text-align: center;
+    font-weight: var(--font_big);
+}
+
+form .submit{
+    background: var(--Orange);
+    color: #fff;
+    padding: 12px 70px;
+    border-radius: 8px;
+}
+
+form .submit span{
+    margin-right: 10px;
+}
+
+form .submit span img{
+    filter: brightness(0) invert(1);
+    height: 14px;
+}
+
+
+
+
+
